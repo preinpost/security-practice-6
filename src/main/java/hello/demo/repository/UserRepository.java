@@ -1,10 +1,10 @@
-package hello.repository;
+package hello.demo.repository;
 
-import hello.entity.User;
+import hello.demo.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
 
 public interface UserRepository extends JpaRepository<User, Integer> {
-    Optional<User> findUserByUsername(String u);
+    Optional<User> findUserByUsername(String username);
 }
