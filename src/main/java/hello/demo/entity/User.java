@@ -18,7 +18,7 @@ public class User {
     private String username;
     private String password;
 
-    @Enumerated
+    @Enumerated(EnumType.STRING)
     private EncryptionAlgorithm algorithm;
 
     @OneToMany(mappedBy = "users", fetch = FetchType.EAGER)
